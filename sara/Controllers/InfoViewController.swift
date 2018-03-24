@@ -1,5 +1,5 @@
 //
-//  ReportViewController.swift
+//  InfoViewController.swift
 //  sara
 //
 //  Created by Matilda Stevenson on 24/3/18.
@@ -8,18 +8,14 @@
 
 import UIKit
 
-class ReportViewController: UIViewController {
+class InfoViewController: UIViewController {
 
-    @IBAction func startReportButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "goToLocationReport", sender: self)
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToIncident", sender: self)
     }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // show the tool bar
-//        navigationController?.setToolbarHidden(false, animated: false)
         // Do any additional setup after loading the view.
     }
 
@@ -29,7 +25,7 @@ class ReportViewController: UIViewController {
     }
     
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -37,6 +33,6 @@ class ReportViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    
+    */
 
 }

@@ -14,6 +14,10 @@
 		B840F4A42065C59400B9347F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B840F4A22065C59400B9347F /* LaunchScreen.storyboard */; };
 		B840F4AD2065CFD500B9347F /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4AC2065CFD500B9347F /* InitialViewController.swift */; };
 		B840F4AF2065D7F800B9347F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4AE2065D7F800B9347F /* ReportViewController.swift */; };
+		B840F4B52065E8BE00B9347F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4B42065E8BE00B9347F /* InfoViewController.swift */; };
+		B840F4B72065E93700B9347F /* IncidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4B62065E93700B9347F /* IncidentViewController.swift */; };
+		B840F4B92065E94800B9347F /* OffenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4B82065E94800B9347F /* OffenderViewController.swift */; };
+		B840F4BB2065E95F00B9347F /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4BA2065E95F00B9347F /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		B840F4A52065C59400B9347F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B840F4AC2065CFD500B9347F /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		B840F4AE2065D7F800B9347F /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		B840F4B42065E8BE00B9347F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B840F4B62065E93700B9347F /* IncidentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentViewController.swift; sourceTree = "<group>"; };
+		B840F4B82065E94800B9347F /* OffenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffenderViewController.swift; sourceTree = "<group>"; };
+		B840F4BA2065E95F00B9347F /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,10 @@
 				B840F4AC2065CFD500B9347F /* InitialViewController.swift */,
 				B840F49B2065C59400B9347F /* ViewController.swift */,
 				B840F4AE2065D7F800B9347F /* ReportViewController.swift */,
+				B840F4B42065E8BE00B9347F /* InfoViewController.swift */,
+				B840F4B62065E93700B9347F /* IncidentViewController.swift */,
+				B840F4B82065E94800B9347F /* OffenderViewController.swift */,
+				B840F4BA2065E95F00B9347F /* ContactDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +166,10 @@
 				B840F4AD2065CFD500B9347F /* InitialViewController.swift in Sources */,
 				B840F49C2065C59400B9347F /* ViewController.swift in Sources */,
 				B840F49A2065C59400B9347F /* AppDelegate.swift in Sources */,
+				B840F4B92065E94800B9347F /* OffenderViewController.swift in Sources */,
+				B840F4B72065E93700B9347F /* IncidentViewController.swift in Sources */,
+				B840F4BB2065E95F00B9347F /* ContactDetailsViewController.swift in Sources */,
+				B840F4B52065E8BE00B9347F /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

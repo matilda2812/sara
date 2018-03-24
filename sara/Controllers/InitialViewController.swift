@@ -10,6 +10,9 @@ import UIKit
 
 class InitialViewController: UIViewController {
 
+    @IBOutlet weak var recordButton: UIButton!
+    
+    @IBOutlet weak var helpButton: UIButton!
     
     @IBAction func recordButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "goToRecord", sender: self)
@@ -24,7 +27,17 @@ class InitialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // trying to hide the tool bar
+        navigationController?.setToolbarHidden(true, animated: false)
+        
+        // give buttons rounded corners
+        recordButton.layer.cornerRadius = 10
+        helpButton.layer.cornerRadius = 10
+        
+        recordButton.backgroundColor = UIColor.green
+        helpButton.backgroundColor = UIColor.green
+        
         // Do any additional setup after loading the view.
     }
 
