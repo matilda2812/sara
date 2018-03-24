@@ -10,6 +10,9 @@ import UIKit
 
 class OffenderViewController: UIViewController {
 
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToContact", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

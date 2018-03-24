@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FD7EC8C8A454A2003B06969 /* Pods_sara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AC5FABBEB551CFD9D42855 /* Pods_sara.framework */; };
 		B840F49A2065C59400B9347F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4992065C59400B9347F /* AppDelegate.swift */; };
 		B840F49C2065C59400B9347F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F49B2065C59400B9347F /* ViewController.swift */; };
 		B840F49F2065C59400B9347F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B840F49D2065C59400B9347F /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AAC7D66B4D291020D0A71BA2 /* Pods-sara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sara.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sara/Pods-sara.debug.xcconfig"; sourceTree = "<group>"; };
 		B840F4962065C59400B9347F /* sara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B840F4992065C59400B9347F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B840F49B2065C59400B9347F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,8 @@
 		B87FA2432066044800C6BF17 /* FtR Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FtR Background.png"; sourceTree = "<group>"; };
 		B87FA2462066073500C6BF17 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B87FA2482066083B00C6BF17 /* SupportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportService.swift; sourceTree = "<group>"; };
+		CBA61D5F83438A845CD51C54 /* Pods-sara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sara.release.xcconfig"; path = "Pods/Target Support Files/Pods-sara/Pods-sara.release.xcconfig"; sourceTree = "<group>"; };
+		F1AC5FABBEB551CFD9D42855 /* Pods_sara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B87FA2472066073500C6BF17 /* MapKit.framework in Frameworks */,
+				2FD7EC8C8A454A2003B06969 /* Pods_sara.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,7 @@
 				B840F4982065C59400B9347F /* sara */,
 				B840F4972065C59400B9347F /* Products */,
 				B87FA2452066073500C6BF17 /* Frameworks */,
+				F117D0681FC77A8B4BAC2331 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,8 +157,18 @@
 			isa = PBXGroup;
 			children = (
 				B87FA2462066073500C6BF17 /* MapKit.framework */,
+				F1AC5FABBEB551CFD9D42855 /* Pods_sara.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F117D0681FC77A8B4BAC2331 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAC7D66B4D291020D0A71BA2 /* Pods-sara.debug.xcconfig */,
+				CBA61D5F83438A845CD51C54 /* Pods-sara.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B840F4A82065C59400B9347F /* Build configuration list for PBXNativeTarget "sara" */;
 			buildPhases = (
+				37C387332EF3028DB6F9096A /* [CP] Check Pods Manifest.lock */,
 				B840F4922065C59400B9347F /* Sources */,
 				B840F4932065C59400B9347F /* Frameworks */,
 				B840F4942065C59400B9347F /* Resources */,
+				DBECDDA5F8CCD847643747A6 /* [CP] Embed Pods Frameworks */,
+				9E8D9ECC0A9B55ECA9D4872F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +246,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37C387332EF3028DB6F9096A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sara-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8D9ECC0A9B55ECA9D4872F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sara/Pods-sara-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBECDDA5F8CCD847643747A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sara/Pods-sara-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LocationPicker/LocationPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/LocationPickerViewController/LocationPickerViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LocationPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LocationPickerViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sara/Pods-sara-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B840F4922065C59400B9347F /* Sources */ = {
@@ -377,6 +452,7 @@
 		};
 		B840F4A92065C59400B9347F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC7D66B4D291020D0A71BA2 /* Pods-sara.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +468,7 @@
 		};
 		B840F4AA2065C59400B9347F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBA61D5F83438A845CD51C54 /* Pods-sara.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
