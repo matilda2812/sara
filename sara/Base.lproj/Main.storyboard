@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AZo-Jz-sH0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,23 +10,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="lQj-s5-7cn">
             <objects>
-                <viewController id="jY5-k2-MZs" sceneMemberID="viewController">
+                <viewController id="jY5-k2-MZs" customClass="InitialViewController" customModule="sara" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2J2-Bh-ndA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iz2-JX-XuW">
-                                <rect key="frame" x="107" y="409" width="159" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Get Help"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI2-Yc-7OQ">
                                 <rect key="frame" x="119" y="193" width="137" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordButtonPressed:" destination="jY5-k2-MZs" eventType="touchUpInside" id="brN-CT-Tuk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSM-ZK-3H5">
+                                <rect key="frame" x="119" y="402" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Help"/>
+                                <connections>
+                                    <action selector="getHelpButtonPressed:" destination="jY5-k2-MZs" eventType="touchUpInside" id="fjf-6u-UZk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,13 +40,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ljd-Yj-kz6"/>
                     <connections>
-                        <segue destination="8Wo-OD-ipc" kind="show" id="rMC-fa-kcK"/>
-                        <segue destination="i1d-GV-60a" kind="show" id="OMz-B1-0XC"/>
+                        <segue destination="8Wo-OD-ipc" kind="show" identifier="goToRecord" id="ilH-Xr-eM1"/>
+                        <segue destination="i1d-GV-60a" kind="show" identifier="goToHelp" id="6rG-LZ-2vx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyl-mL-lRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="97"/>
+            <point key="canvasLocation" x="629.60000000000002" y="96.7016491754123"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PcW-iJ-KHL">
@@ -64,21 +70,22 @@
                     <view key="view" contentMode="scaleToFill" id="Mky-CY-gM5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Information about reporting the assault" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dHJ-k2-jeR">
+                                <rect key="frame" x="48" y="193" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="f7e-BU-KTc"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyG-7G-98K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676" y="-286"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="7PT-gh-Yad">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="RbD-PZ-Zez" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5ww-uz-gcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2503" y="-251"/>
+            <point key="canvasLocation" x="1669.5999999999999" y="-236.13193403298354"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Idb-li-Ivz">
@@ -96,7 +103,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDY-HF-PpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="97"/>
+            <point key="canvasLocation" x="-212" y="97"/>
         </scene>
     </scenes>
 </document>
