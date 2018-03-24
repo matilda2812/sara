@@ -18,6 +18,10 @@
 		B840F4B72065E93700B9347F /* IncidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4B62065E93700B9347F /* IncidentViewController.swift */; };
 		B840F4B92065E94800B9347F /* OffenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4B82065E94800B9347F /* OffenderViewController.swift */; };
 		B840F4BB2065E95F00B9347F /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4BA2065E95F00B9347F /* ContactDetailsViewController.swift */; };
+		B840F4D02066002300B9347F /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840F4CF2066002300B9347F /* HelpViewController.swift */; };
+		B87FA2442066044800C6BF17 /* FtR Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B87FA2432066044800C6BF17 /* FtR Background.png */; };
+		B87FA2472066073500C6BF17 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87FA2462066073500C6BF17 /* MapKit.framework */; };
+		B87FA2492066083B00C6BF17 /* SupportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87FA2482066083B00C6BF17 /* SupportService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,28 @@
 		B840F4B62065E93700B9347F /* IncidentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentViewController.swift; sourceTree = "<group>"; };
 		B840F4B82065E94800B9347F /* OffenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffenderViewController.swift; sourceTree = "<group>"; };
 		B840F4BA2065E95F00B9347F /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		B840F4BD2065F76300B9347F /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		B840F4BE2065F76400B9347F /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		B840F4BF2065F76500B9347F /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B840F4C02065F76500B9347F /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		B840F4C12065F76600B9347F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		B840F4C22065F76700B9347F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		B840F4C32065F76800B9347F /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		B840F4C42065F76900B9347F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		B840F4C52065F76A00B9347F /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		B840F4C62065F76B00B9347F /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		B840F4C72065F76D00B9347F /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		B840F4C82065F76D00B9347F /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		B840F4C92065F76E00B9347F /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		B840F4CA2065F76F00B9347F /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		B840F4CB2065F77000B9347F /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		B840F4CC2065F77200B9347F /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B840F4CD2065F77300B9347F /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		B840F4CE2065F77400B9347F /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		B840F4CF2066002300B9347F /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		B87FA2432066044800C6BF17 /* FtR Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FtR Background.png"; sourceTree = "<group>"; };
+		B87FA2462066073500C6BF17 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B87FA2482066083B00C6BF17 /* SupportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87FA2472066073500C6BF17 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +79,7 @@
 			children = (
 				B840F4982065C59400B9347F /* sara */,
 				B840F4972065C59400B9347F /* Products */,
+				B87FA2452066073500C6BF17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,12 +94,15 @@
 		B840F4982065C59400B9347F /* sara */ = {
 			isa = PBXGroup;
 			children = (
+				B840F4BC2065F69C00B9347F /* fonts */,
 				B840F4AB2065CF8D00B9347F /* Controllers */,
 				B840F4992065C59400B9347F /* AppDelegate.swift */,
 				B840F49D2065C59400B9347F /* Main.storyboard */,
 				B840F4A02065C59400B9347F /* Assets.xcassets */,
+				B87FA2432066044800C6BF17 /* FtR Background.png */,
 				B840F4A22065C59400B9347F /* LaunchScreen.storyboard */,
 				B840F4A52065C59400B9347F /* Info.plist */,
+				B87FA2482066083B00C6BF17 /* SupportService.swift */,
 			);
 			path = sara;
 			sourceTree = "<group>";
@@ -80,14 +111,48 @@
 			isa = PBXGroup;
 			children = (
 				B840F4AC2065CFD500B9347F /* InitialViewController.swift */,
-				B840F49B2065C59400B9347F /* ViewController.swift */,
 				B840F4AE2065D7F800B9347F /* ReportViewController.swift */,
 				B840F4B42065E8BE00B9347F /* InfoViewController.swift */,
 				B840F4B62065E93700B9347F /* IncidentViewController.swift */,
 				B840F4B82065E94800B9347F /* OffenderViewController.swift */,
 				B840F4BA2065E95F00B9347F /* ContactDetailsViewController.swift */,
+				B840F49B2065C59400B9347F /* ViewController.swift */,
+				B840F4CF2066002300B9347F /* HelpViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B840F4BC2065F69C00B9347F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B840F4C52065F76A00B9347F /* Lato-Black.ttf */,
+				B840F4BF2065F76500B9347F /* Lato-BlackItalic.ttf */,
+				B840F4C12065F76600B9347F /* Lato-Bold.ttf */,
+				B840F4CC2065F77200B9347F /* Lato-BoldItalic.ttf */,
+				B840F4C72065F76D00B9347F /* Lato-Hairline.ttf */,
+				B840F4CD2065F77300B9347F /* Lato-HairlineItalic.ttf */,
+				B840F4BE2065F76400B9347F /* Lato-Heavy.ttf */,
+				B840F4CE2065F77400B9347F /* Lato-HeavyItalic.ttf */,
+				B840F4C02065F76500B9347F /* Lato-Italic.ttf */,
+				B840F4C42065F76900B9347F /* Lato-Light.ttf */,
+				B840F4C62065F76B00B9347F /* Lato-LightItalic.ttf */,
+				B840F4BD2065F76300B9347F /* Lato-Medium.ttf */,
+				B840F4C92065F76E00B9347F /* Lato-MediumItalic.ttf */,
+				B840F4C22065F76700B9347F /* Lato-Regular.ttf */,
+				B840F4C82065F76D00B9347F /* Lato-Semibold.ttf */,
+				B840F4CB2065F77000B9347F /* Lato-SemiboldItalic.ttf */,
+				B840F4CA2065F76F00B9347F /* Lato-Thin.ttf */,
+				B840F4C32065F76800B9347F /* Lato-ThinItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		B87FA2452066073500C6BF17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B87FA2462066073500C6BF17 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +188,11 @@
 					B840F4952065C59400B9347F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -150,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B840F4A42065C59400B9347F /* LaunchScreen.storyboard in Resources */,
+				B87FA2442066044800C6BF17 /* FtR Background.png in Resources */,
 				B840F4A12065C59400B9347F /* Assets.xcassets in Resources */,
 				B840F49F2065C59400B9347F /* Main.storyboard in Resources */,
 			);
@@ -166,6 +237,8 @@
 				B840F4AD2065CFD500B9347F /* InitialViewController.swift in Sources */,
 				B840F49C2065C59400B9347F /* ViewController.swift in Sources */,
 				B840F49A2065C59400B9347F /* AppDelegate.swift in Sources */,
+				B840F4D02066002300B9347F /* HelpViewController.swift in Sources */,
+				B87FA2492066083B00C6BF17 /* SupportService.swift in Sources */,
 				B840F4B92065E94800B9347F /* OffenderViewController.swift in Sources */,
 				B840F4B72065E93700B9347F /* IncidentViewController.swift in Sources */,
 				B840F4BB2065E95F00B9347F /* ContactDetailsViewController.swift in Sources */,

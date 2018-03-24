@@ -7,16 +7,30 @@
 //
 
 import UIKit
+import MapKit
 
-class InfoViewController: UIViewController {
+class InfoViewController: UIViewController{
 
+    let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var mapView: MKMapView!
     @IBAction func nextButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "goToIncident", sender: self)
     }
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        datePicker.datePickerMode = .date
         // Do any additional setup after loading the view.
+        
+        // location stuff
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,4 +49,25 @@ class InfoViewController: UIViewController {
     }
     */
 
+}
+
+extension InfoViewController : CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            let span = MKCoordinateSpanMake(0.05, 0.05)
+            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+            mapView.setRegion(region, animated: true)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: (error)")
+    }
+    
 }

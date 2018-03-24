@@ -32,11 +32,13 @@ class InitialViewController: UIViewController {
         navigationController?.setToolbarHidden(true, animated: false)
         
         // give buttons rounded corners
-        recordButton.layer.cornerRadius = 10
-        helpButton.layer.cornerRadius = 10
+        recordButton.layer.cornerRadius = 5
+        helpButton.layer.cornerRadius = 5
         
-        recordButton.backgroundColor = UIColor.green
-        helpButton.backgroundColor = UIColor.green
+//        recordButton.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+//        helpButton.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+//        recordButton.layer.borderWidth = 5
+//        helpButton.layer.borderWidth = 5
         
         // Do any additional setup after loading the view.
     }
