@@ -23,6 +23,7 @@
 		B87FA2442066044800C6BF17 /* FtR Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B87FA2432066044800C6BF17 /* FtR Background.png */; };
 		B87FA2472066073500C6BF17 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87FA2462066073500C6BF17 /* MapKit.framework */; };
 		B87FA2492066083B00C6BF17 /* SupportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87FA2482066083B00C6BF17 /* SupportService.swift */; };
+		B8F9A85E20672F4E0014C076 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9A85D20672F4E0014C076 /* ReceiptViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		B87FA2432066044800C6BF17 /* FtR Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FtR Background.png"; sourceTree = "<group>"; };
 		B87FA2462066073500C6BF17 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B87FA2482066083B00C6BF17 /* SupportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportService.swift; sourceTree = "<group>"; };
+		B8F9A85D20672F4E0014C076 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		CBA61D5F83438A845CD51C54 /* Pods-sara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sara.release.xcconfig"; path = "Pods/Target Support Files/Pods-sara/Pods-sara.release.xcconfig"; sourceTree = "<group>"; };
 		F1AC5FABBEB551CFD9D42855 /* Pods_sara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				B840F4BA2065E95F00B9347F /* ContactDetailsViewController.swift */,
 				B840F49B2065C59400B9347F /* ViewController.swift */,
 				B840F4CF2066002300B9347F /* HelpViewController.swift */,
+				B8F9A85D20672F4E0014C076 /* ReceiptViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				B87FA2492066083B00C6BF17 /* SupportService.swift in Sources */,
 				B840F4B92065E94800B9347F /* OffenderViewController.swift in Sources */,
 				B840F4B72065E93700B9347F /* IncidentViewController.swift in Sources */,
+				B8F9A85E20672F4E0014C076 /* ReceiptViewController.swift in Sources */,
 				B840F4BB2065E95F00B9347F /* ContactDetailsViewController.swift in Sources */,
 				B840F4B52065E8BE00B9347F /* InfoViewController.swift in Sources */,
 			);

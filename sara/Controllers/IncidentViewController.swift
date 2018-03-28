@@ -14,16 +14,8 @@ class IncidentViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         performSegue(withIdentifier: "goToOffender", sender: self)
     }
     
-    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var textView: UITextView!
     
-    @IBAction func addButtonPressed(_ sender: Any) {
-        descriptionTextField.endEditing(true)
-        
-        // have to disable text field elements while message is sent
-        descriptionTextField.isEnabled = false
-//        self.addButton.isEnabled = false
-        
-    }
     
     @IBOutlet weak var incidentPicker: UIPickerView!
     
@@ -32,10 +24,12 @@ class IncidentViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var victimPickerData: [String] = [String]()
     var incidentPickerData: [String] = [String]()
     
+    @IBOutlet weak var incidentTextField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        descriptionTextField.delegate = self
+//        descriptionTextField.delegate = self
         victimPicker.tag = 0
         incidentPicker.tag = 1
         victimPicker.delegate = self
@@ -45,6 +39,17 @@ class IncidentViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         victimPickerData = ["Me"," A family member", "A friend","An acquaintance", "Other"]
         incidentPickerData = ["Rape/Sexual assault","Indecent exposure","Stalking or following", "Touching","Childhood sexual assault","Sexual harassment","Other"]
 
+        //        recordButton.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+        //        helpButton.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+        //        recordButton.layer.borderWidth = 5
+        //        helpButton.layer.borderWidth = 5
+        incidentTextField.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+        incidentTextField.layer.borderWidth = 1
+//        incidentPicker.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+//        incidentPicker.layer.borderWidth = 1
+//        victimPicker.layer.borderWidth = 1
+//        victimPicker.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+//
         // Do any additional setup after loading the view.
         
     }

@@ -10,12 +10,28 @@ import UIKit
 
 class OffenderViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var appearanceTextField: UITextField!
+    
+    @IBOutlet weak var genderTextField: UITextField!
+    
+    @IBOutlet weak var appearance2TextField: UITextField!
+    
     @IBAction func nextButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "goToContact", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nameTextField.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+        nameTextField.layer.borderWidth = 1
+        genderTextField.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+        genderTextField.layer.borderWidth = 1
+        appearanceTextField.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+        appearanceTextField.layer.borderWidth = 1
+        appearance2TextField.layer.borderColor = UIColor(red:0.76, green:0.58, blue:0.54, alpha:1.0).cgColor
+        appearance2TextField.layer.borderWidth = 1
         // Do any additional setup after loading the view.
     }
 
